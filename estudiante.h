@@ -11,6 +11,10 @@ public:
     QString nombre() const;
     QString estado() const;
     QString toString() const;
+    float getNota1() const;
+    float getNota2() const;
+    float notaF() const;
+    float notaR() const;
 
 private:
     QString m_nombre;

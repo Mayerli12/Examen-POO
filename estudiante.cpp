@@ -13,10 +13,10 @@ QString Estudiante::nombre() const
 
 QString Estudiante::estado() const
 {
-    float notaFinal = (m_nota1 + m_nota2) / 2;
-    if (notaFinal >= 70)
+
+    if (notaF() >= 70)
         return "Aprobado";
-    else if (notaFinal >= 25)
+    else if (notaF() >= 25)
         return "Remedial";
     else
         return "Reprobado";
@@ -25,4 +25,24 @@ QString Estudiante::estado() const
 QString Estudiante::toString() const
 {
     return m_nombre + " " + estado() + " " + QString::number(m_nota1) + " " + QString::number(m_nota2);
+}
+
+float Estudiante::notaF() const
+{
+    return m_nota1 + m_nota2;
+}
+
+float Estudiante::notaR() const
+{
+    return (70.0 - 0.4 * notaF()) / 0.6;
+}
+
+float Estudiante::getNota1() const
+{
+    return m_nota1;
+}
+
+float Estudiante::getNota2() const
+{
+    return m_nota2;
 }

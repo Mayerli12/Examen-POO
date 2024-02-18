@@ -23,7 +23,7 @@ private slots:
 
     void on_actionSalir_triggered();
 
-    void procesarDatosEstudiante(const QString &nombre);
+    void procesarDatosEstudiante(const QString &nombre, float nota1, float nota2);
 
 
 private:

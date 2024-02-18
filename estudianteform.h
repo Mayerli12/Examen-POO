@@ -20,20 +20,14 @@ public:
 
 private slots:
     void on_buttonBox_accepted();
-
-
-
     void on_buttonBox_rejected();
 
-
-
 signals:
-    void datosEstudianteIngresados(const QString &nombre);
-
+    void datosEstudianteIngresados(const QString &nombre, float nota1, float nota2);
 
 private:
     Ui::EstudianteForm *ui;
     QList<Estudiante*> m_estudiante;
 
 };
-#endif //ESTUDIANTEFORM_H
+#endif // ESTUDIANTEFORM_H

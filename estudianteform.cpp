@@ -21,7 +21,8 @@ void EstudianteForm::on_buttonBox_accepted()
 
     m_estudiante.append(new Estudiante(nombre, nota1, nota2));
 
-    emit datosEstudianteIngresados(nombre);
+    emit datosEstudianteIngresados(nombre, nota1, nota2);
+
 }
 
 
