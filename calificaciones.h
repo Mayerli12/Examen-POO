@@ -8,6 +8,7 @@
 
 #include <estudianteform.h>
 #include "estudiante.h"
+#include "creditosform.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -40,6 +41,8 @@ private slots:
 
 
     void on_actionCargar_Datos_triggered();
+
+    void on_actionCreditos_triggered();
 
 private:
     Ui::Calificaciones *ui;

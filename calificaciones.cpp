@@ -133,3 +133,10 @@ void Calificaciones::on_actionCargar_Datos_triggered()
     cargarDatos();
 }
 
+
+void Calificaciones::on_actionCreditos_triggered()
+{
+    CreditosForm *w = new CreditosForm();
+     w->show();
+}
+
