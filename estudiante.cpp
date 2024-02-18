@@ -34,7 +34,16 @@ float Estudiante::notaF() const
 
 float Estudiante::notaR() const
 {
-    return (70.0 - 0.4 * notaF()) / 0.6;
+    /*float notaRemedial;
+    if (estado() == "Reprobado"){
+        notaRemedial =  (70 - 0.4 * notaF()) / 0.6;
+        return notaRemedial;
+    }else{
+        if (estado() == "Aprobado"){
+            return 0.0;
+        }
+    }*/
+    return (70 - 0.4 * notaF()) / 0.6;
 }
 
 float Estudiante::getNota1() const

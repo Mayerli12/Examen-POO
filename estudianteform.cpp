@@ -23,6 +23,13 @@ void EstudianteForm::on_buttonBox_accepted()
 
     emit datosEstudianteIngresados(nombre, nota1, nota2);
 
+    if (nombre.isEmpty()){
+        QMessageBox::warning(this, "Nombre", "El nombre no pueden estar vacío");
+        ui->txtNombre->setFocus();
+        return;
+    }
+    close();
+
 }
 
 

@@ -2,7 +2,13 @@
 #define CALIFICACIONES_H
 
 #include <QMainWindow>
+#include <QFile>
+#include <QDir>
+#include <QFileDialog>
+
 #include <estudianteform.h>
+#include "estudiante.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,6 +24,9 @@ public:
     Calificaciones(QWidget *parent = nullptr);
     ~Calificaciones();
 
+    void guardarDatos();
+    void cargarDatos();
+
 private slots:
     void on_actionNuevo_triggered();
 
@@ -25,6 +34,12 @@ private slots:
 
     void procesarDatosEstudiante(const QString &nombre, float nota1, float nota2);
 
+
+    void on_actionGuardar_Datos_triggered();
+
+
+
+    void on_actionCargar_Datos_triggered();
 
 private:
     Ui::Calificaciones *ui;

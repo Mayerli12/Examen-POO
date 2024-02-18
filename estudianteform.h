@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QList>
+#include <QMessageBox>
+
 
 #include <estudiante.h>
 
