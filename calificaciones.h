@@ -5,6 +5,7 @@
 #include <QFile>
 #include <QDir>
 #include <QFileDialog>
+#include <QTextStream>
 
 #include <estudianteform.h>
 #include "estudiante.h"
